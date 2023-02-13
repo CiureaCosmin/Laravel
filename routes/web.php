@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 
 // Afisare pagina de start
-Route::get('/', function () {
-    return view('index')->name('home');
-});
+Route::get('/', 'HomeController@index'); //cos
 
 
 Auth::routes();
