@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 
 // Afisare pagina de start
-Route::get('/', 'HomeController@index'); //cos
+Route::get('/', 'HomeController@index');
+Route::get('/crina', 'CrinaController@index');
 
 
 Auth::routes();
